@@ -3,7 +3,7 @@ package Core;
 import org.openqa.selenium.WebDriver;
 
 public class PageNavigator extends MainDriver {
-    private String siteURL;
+    private String siteURL = "https://twitter.com/";
 
     public PageNavigator(WebDriver webDriver) {
         super(webDriver);

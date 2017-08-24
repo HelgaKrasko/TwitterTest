@@ -1,20 +1,10 @@
 import twitter4j.Status;
 import twitter4j.TwitterException;
-import twitter4j.TwitterFactory;
-import twitter4j.conf.ConfigurationBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TwitterAPI {
-
-    public static List<Status> get_home_timeline_getTest(twitter4j.Twitter twitter) throws TwitterException {
-        List<Status> status = twitter.getHomeTimeline();
-        for (Status s : status) {
-            System.out.println(s.getUser().getName() + " " + s.getText());
-        }
-        return status;
-    }
 
     public List<String> get_home_timeline_getText(twitter4j.Twitter twitter) throws TwitterException {
         List<Status> status = twitter.getHomeTimeline();
@@ -47,9 +37,16 @@ public class TwitterAPI {
         twitter.updateStatus(tweet);
         return twitter.getUserTimeline().get(0);
     }
-    // if call method twice - Additional
 
     public void destroyTweet(twitter4j.Twitter twitter, long id) throws TwitterException {
         twitter.destroyStatus(id);
+    }
+
+    public void deleteAllStatuses(twitter4j.Twitter twitter) throws TwitterException {
+        int length = twitter.getUserTimeline().size();
+        List<Status> statuses = twitter.getUserTimeline();
+        for (Status st : statuses) {
+            destroyTweet(twitter, st.getId());
+        }
     }
 }
