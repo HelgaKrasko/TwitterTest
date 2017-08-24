@@ -4,7 +4,21 @@
     <bookmark url="jar://D:/twitter4j-4.0.4/lib/twitter4j-core-4.0.4.jar!/twitter4j/ResponseListImpl.class" description="return this.accessLevel;" line="38" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cae548f8-cfd7-46c3-8ee9-e1d44b67eda3" name="Default" comment="" />
+    <list default="true" id="cae548f8-cfd7-46c3-8ee9-e1d44b67eda3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwitterTest/src/main/java/Core/PageNavigator.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TwitterTest/src/main/java/Pages/PageNavigator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TwitterTest/FirstJavaClass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TwitterTest/TwitterMain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/TwitterTest/FirstTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/TwitterTest/TwitterTest.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TwitterTest/src/main/java/Pages/MainDriver.java" afterPath="$PROJECT_DIR$/TwitterTest/src/main/java/Core/MainDriver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TwitterTest/src/main/java/TwitterMain.java" afterPath="$PROJECT_DIR$/TwitterTest/src/main/java/TwitterAPI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwitterTest/src/main/java/Pages/LoginPage.java" afterPath="$PROJECT_DIR$/TwitterTest/src/main/java/Pages/LoginPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestAPI.java" afterPath="$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestAPI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestWeb.java" afterPath="$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestWeb.java" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +28,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TwitterMain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/TwitterMain.java">
+      <file leaf-file-name="TwitterAPI.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/TwitterAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+            <state relative-caret-position="653">
+              <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Oauth.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Core/Oauth.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,8 +55,8 @@
       <file leaf-file-name="TwitterTestAPI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,9 +67,11 @@
       <file leaf-file-name="TwitterTestWeb.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestWeb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="527">
+              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,69 +79,84 @@
       <file leaf-file-name="TwitterWeb.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/TwitterWeb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserTimeLinePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages/UserTimeLinePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeTimeLinePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages/HomeTimeLinePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MainDriver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages/MainDriver.java">
+        <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Core/MainDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#142#143#0" expanded="true" />
-                <element signature="e#184#185#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="84">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="PageNavigator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages/PageNavigator.java">
+        <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Core/PageNavigator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="84">
+              <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="46" />
               <folding>
-                <element signature="e#164#165#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#177#178#0" expanded="true" />
+                <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#245#246#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResponseListImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/twitter4j-4.0.4/lib/twitter4j-core-4.0.4.jar!/twitter4j/ResponseListImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="e#1104#1105#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TweetsResources.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/twitter4j-4.0.4/lib/twitter4j-core-4.0.4.jar!/twitter4j/api/TweetsResources.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -126,6 +169,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -143,6 +189,14 @@
         <option value="$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTest.java" />
         <option value="$PROJECT_DIR$/TwitterTest/src/main/java/Pages/MainDriver.java" />
         <option value="$PROJECT_DIR$/TwitterTest/src/main/java/Pages/PageNavigate.java" />
+        <option value="$PROJECT_DIR$/TwitterTest/src/main/java/Pages/PageNavigator.java" />
+        <option value="$PROJECT_DIR$/TwitterTest/src/main/java/Pages/LoginPage.java" />
+        <option value="$PROJECT_DIR$/TwitterTest/src/main/java/Pages/HomeTimeLinePage.java" />
+        <option value="$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestWeb.java" />
+        <option value="$PROJECT_DIR$/TwitterTest/src/main/java/Core/PageNavigator.java" />
+        <option value="$PROJECT_DIR$/TwitterTest/src/main/java/Core/Oauth.java" />
+        <option value="$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestAPI.java" />
+        <option value="$PROJECT_DIR$/TwitterTest/src/main/java/TwitterAPI.java" />
       </list>
     </option>
   </component>
@@ -151,6 +205,9 @@
     <option name="y" value="20" />
     <option name="width" value="1400" />
     <option name="height" value="990" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -216,6 +273,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TwitterTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TwitterTest" type="462c0819:PsiDirectoryNode" />
+              <item name="TwitterTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -245,7 +311,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="D:/selenium-server-standalone-3.5.2.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -267,61 +333,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TwitterTestAPI.checkTweetDuplicationError">
-    <configuration name="TwitterTestAPI.checkThatTweetIsDestroyed" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TwitterTest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TwitterTestAPI" />
-      <option name="METHOD_NAME" value="checkThatTweetIsDestroyed" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="TwitterTestAPI.checkThatTweetIsDestroyed" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TwitterTest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TwitterTestAPI" />
-      <option name="METHOD_NAME" value="checkThatTweetIsDestroyed" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
+  <component name="RunManager" selected="TestNG.TwitterTestWeb.checkCreatedTweet">
     <configuration name="TwitterTestAPI.checkTweetDuplicationError" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TwitterTest" />
@@ -376,15 +388,69 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TwitterTestAPI.checkUpdatedTweet" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TwitterTestWeb" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TwitterTest" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TwitterTestAPI" />
-      <option name="METHOD_NAME" value="checkUpdatedTweet" />
+      <option name="MAIN_CLASS_NAME" value="TwitterTestWeb" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="TwitterTestWeb.checkCreatedTweet" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TwitterTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TwitterTestWeb" />
+      <option name="METHOD_NAME" value="checkCreatedTweet" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="TwitterTestWeb.tryGoToSite" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TwitterTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TwitterTestWeb" />
+      <option name="METHOD_NAME" value="tryGoToSite" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -485,19 +551,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkUpdatedTweet" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkThatTweetIsDestroyed" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkThatTweetIsDestroyed" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkTweetDuplicationError" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkTweetDuplicationError" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkTweetDuplicationError" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkTweetDuplicationError" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.TwitterTestWeb.tryGoToSite" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.TwitterTestWeb" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.TwitterTestWeb.checkCreatedTweet" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkTweetDuplicationError" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkTweetDuplicationError" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkThatTweetIsDestroyed" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkThatTweetIsDestroyed" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkUpdatedTweet" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TwitterTestWeb.checkCreatedTweet" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TwitterTestWeb.tryGoToSite" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TwitterTestWeb" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkTweetDuplicationError" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.TwitterTestAPI.checkTweetDuplicationError" />
       </list>
     </recent_temporary>
   </component>
@@ -515,39 +581,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TwitterTest_checkThatTweetIsDestroyed - 2017.08.24 at 13h 56m 37s.xml">
-      <configuration name="TwitterTest.checkThatTweetIsDestroyed" configurationId="TestNG" />
+    <history-entry file="TwitterTestWeb - 2017.08.24 at 18h 47m 11s.xml">
+      <configuration name="TwitterTestWeb" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TwitterTest_checkThatTweetIsDestroyed - 2017.08.24 at 13h 57m 18s.xml">
-      <configuration name="TwitterTest.checkThatTweetIsDestroyed" configurationId="TestNG" />
+    <history-entry file="TwitterTestWeb_checkCreatedTweet - 2017.08.24 at 19h 33m 24s.xml">
+      <configuration name="TwitterTestWeb.checkCreatedTweet" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TwitterTest_checkThatTweetIsDestroyed_(1) - 2017.08.24 at 13h 58m 41s.xml">
-      <configuration name="TwitterTest.checkThatTweetIsDestroyed (1)" configurationId="TestNG" />
+    <history-entry file="TwitterTestWeb_tryGoToSite - 2017.08.24 at 18h 33m 58s.xml">
+      <configuration name="TwitterTestWeb.tryGoToSite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TwitterTest_checkTweetDuplicationError - 2017.08.24 at 14h 10m 37s.xml">
-      <configuration name="TwitterTest.checkTweetDuplicationError" configurationId="TestNG" />
+    <history-entry file="TwitterTestWeb_tryGoToSite - 2017.08.24 at 18h 41m 53s.xml">
+      <configuration name="TwitterTestWeb.tryGoToSite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TwitterTest_checkTweetDuplicationError - 2017.08.24 at 14h 11m 38s.xml">
-      <configuration name="TwitterTest.checkTweetDuplicationError" configurationId="TestNG" />
+    <history-entry file="TwitterTestWeb_tryGoToSite - 2017.08.24 at 18h 42m 19s.xml">
+      <configuration name="TwitterTestWeb.tryGoToSite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TwitterTest_checkTweetDuplicationError - 2017.08.24 at 14h 19m 56s.xml">
-      <configuration name="TwitterTest.checkTweetDuplicationError" configurationId="TestNG" />
+    <history-entry file="TwitterTestWeb_tryGoToSite - 2017.08.24 at 18h 43m 03s.xml">
+      <configuration name="TwitterTestWeb.tryGoToSite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TwitterTest_checkTweetDuplicationError - 2017.08.24 at 14h 23m 59s.xml">
-      <configuration name="TwitterTest.checkTweetDuplicationError" configurationId="TestNG" />
+    <history-entry file="TwitterTestWeb_tryGoToSite - 2017.08.24 at 18h 43m 58s.xml">
+      <configuration name="TwitterTestWeb.tryGoToSite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TwitterTest_checkTweetDuplicationError_(1) - 2017.08.24 at 14h 24m 04s.xml">
-      <configuration name="TwitterTest.checkTweetDuplicationError (1)" configurationId="TestNG" />
+    <history-entry file="TwitterTestWeb_tryGoToSite - 2017.08.24 at 18h 57m 35s.xml">
+      <configuration name="TwitterTestWeb.tryGoToSite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TwitterTest_checkUpdatedTweet - 2017.08.24 at 13h 39m 12s.xml">
-      <configuration name="TwitterTest.checkUpdatedTweet" configurationId="TestNG" />
+    <history-entry file="TwitterTestWeb_tryGoToSite - 2017.08.24 at 18h 58m 28s.xml">
+      <configuration name="TwitterTestWeb.tryGoToSite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TwitterTest_checkUpdatedTweet - 2017.08.24 at 13h 40m 31s.xml">
-      <configuration name="TwitterTest.checkUpdatedTweet" configurationId="TestNG" />
+    <history-entry file="TwitterTestWeb_tryGoToSite - 2017.08.24 at 19h 05m 13s.xml">
+      <configuration name="TwitterTestWeb.tryGoToSite" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -558,11 +625,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3185941" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3185941" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -574,7 +642,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -591,41 +658,59 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestAPI.java</url>
-          <line>33</line>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestAPI.java</url>
-          <line>30</line>
+          <line>23</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestAPI.java</url>
-          <line>67</line>
+          <line>60</line>
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestAPI.java</url>
-          <line>79</line>
+          <line>72</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestAPI.java</url>
-          <line>78</line>
+          <line>71</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TwitterTest/src/main/java/Core/PageNavigator.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestWeb.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages/LoginPage.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/TwitterMain.java">
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/TwitterAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1281">
           <caret line="67" column="70" lean-forward="false" selection-start-line="67" selection-start-column="70" selection-end-line="67" selection-end-column="70" />
@@ -711,7 +796,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/TwitterMain.java">
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/TwitterAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -897,34 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/TwitterMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestWeb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/FirstJavaClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -933,43 +990,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/TwitterWeb.java">
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages/MainDriver.java">
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages/UserTimeLinePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#142#143#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages/PageNavigator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="42">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Pages/HomeTimeLinePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestWeb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Core/MainDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Core/PageNavigator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="46" />
+          <folding>
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/Core/Oauth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/test/java/TwitterTestAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/TwitterWeb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TwitterTest/src/main/java/TwitterAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
