@@ -1,6 +1,11 @@
-import Core.Oauth;
-import Core.PageNavigator;
-import Pages.*;
+package Web;
+
+import Api.Oauth;
+import Api.TwitterAPI;
+import Web.PageObjects.GlobalElements;
+import Web.PageObjects.HomeTimeLinePage;
+import Web.PageObjects.LoginPage;
+import Web.PageObjects.TweetPostInTimeLine;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -17,22 +22,26 @@ public class TwitterWeb {
     private GlobalElements globalElements;
     private TweetPostInTimeLine tweetPostInUserTimeLine;
 
-    public void deleteTweet(int position) {
+    public void deleteTweet(int position) throws InterruptedException {
         tweetPostInUserTimeLine = new TweetPostInTimeLine(driver, position);
         tweetPostInUserTimeLine.getActionDropdown().click();
         tweetPostInUserTimeLine.getDropdownDeleteOption().click();
+        TimeUnit.SECONDS.sleep(2);
         tweetPostInUserTimeLine.getDeleteButton().click();
+        TimeUnit.SECONDS.sleep(2);
     }
 
-    public void goToUserTimeLineByAccountNameLink(){
+    public void goToUserTimeLineByAccountNameLink() throws InterruptedException {
         globalElements = new GlobalElements(driver);
         globalElements.getAccountNameLink().click();
+        TimeUnit.SECONDS.sleep(2);
     }
 
-    public void createTweet(String tweetMessage) {
+    public void createTweet(String tweetMessage) throws InterruptedException {
         homeTimeLinePage = new HomeTimeLinePage(driver);
         homeTimeLinePage.getCreateNewTweetField().sendKeys(tweetMessage);
         homeTimeLinePage.getTweetButton().click();
+        TimeUnit.SECONDS.sleep(2);
     }
 
     public void navigateToSite(String siteURL) {
@@ -41,9 +50,10 @@ public class TwitterWeb {
         pageNavigator.navigateToSite();
     }
 
-    public void logIn(String login, String password) {
+    public void logIn(String login, String password) throws InterruptedException {
         loginPage = new LoginPage(driver);
         loginPage.getLoginField().sendKeys(login);
+        TimeUnit.SECONDS.sleep(2);
         loginPage.getPasswordField().sendKeys(password);
         loginPage.getLogInButton().click();
     }

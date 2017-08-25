@@ -1,13 +1,12 @@
-import Core.Oauth;
-import Pages.HomeTimeLinePage;
+package TestWeb;
 
-import Pages.TweetPostInTimeLine;
-import Pages.UserTimeLinePage;
+import Web.PageObjects.GlobalElements;
+import Web.PageObjects.HomeTimeLinePage;
+
+import Web.PageObjects.TweetPostInTimeLine;
+import Web.TwitterWeb;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import twitter4j.TwitterException;
 
 import java.util.concurrent.TimeUnit;
@@ -15,35 +14,33 @@ import java.util.concurrent.TimeUnit;
 public class TwitterTestWeb {
     private TwitterWeb twitterWeb;
     private HomeTimeLinePage homeTimeLinePage;
-    private UserTimeLinePage userTimeLinePage;
-    TweetPostInTimeLine tweetPostInTimeLine;
+    private TweetPostInTimeLine tweetPostInTimeLine;
+    private GlobalElements globalElements;
 
     private static String siteURL = "https://twitter.com/";
-    private static String loginValue = "orkgirl";
-    private static String passwordValue = "twittertest123";
+    private static String loginValue = "xxxxxxxxxx";
+    private static String passwordValue = "xxxxxxxxxxxxxxxxx";
     private static String createdTweetText = "Created tweet";
     private static String createdTweetWithParametersText = "Created tweet with parameters";
     private static String createdAt = "now";
     private static String retweetCount = "";
-    private static String tweetMessageForDestroying = "This tweet will be destroyed";
+    private static String tweetTextForDestroying = "This tweet will be destroyed";
+    private static String tweetWithDuplicate = "Duplicated tweet";
+    private static String alertDuplicateMessage = "Вы уже отправили этот твит.";
+    private static String tweetIsDeletedAlertMessage = "Ваш твит удален.";
 
-    @BeforeSuite
-    public void setUp() {
+    @BeforeMethod
+    public void navigateToSiteAndLogin() throws InterruptedException {
         twitterWeb = new TwitterWeb();
         twitterWeb.setUpDriver();
-    }
-
-    @BeforeTest(description = "Navigate to target site and log in")
-    public void navigateToSiteAndLogin() {
         twitterWeb.navigateToSite(siteURL);
         twitterWeb.logIn(loginValue, passwordValue);
     }
 
     @Test(description = "Create tweet and check parameters: created at; retweet count; text")
-    public void checkCTweetParameters() throws InterruptedException {
+    public void checkTweetParameters() throws InterruptedException {
         tweetPostInTimeLine = new TweetPostInTimeLine(twitterWeb.getDriver(), 1);
         twitterWeb.createTweet(createdTweetWithParametersText);
-        TimeUnit.SECONDS.sleep(2);
         String actualText = tweetPostInTimeLine.getStatus().getText();
         String actualCreatedAt = tweetPostInTimeLine.getCreatedAt().getText();
         String actualRetweetCount = tweetPostInTimeLine.getRetweetCount().getText();
@@ -59,24 +56,41 @@ public class TwitterTestWeb {
         twitterWeb.createTweet(createdTweetText);
         TimeUnit.SECONDS.sleep(2);
         String actualResult = homeTimeLinePage.getStatusByPosition(1).getText();
+
         Assert.assertEquals(actualResult, createdTweetText);
     }
 
     @Test(description = "Destroy tweet and check that tweet is absent on UserTimeLine")
     public void checkThatTweetIsDestroyed() throws InterruptedException {
-        twitterWeb.createTweet(tweetMessageForDestroying);
-        twitterWeb.goToUserTimeLineByAccountNameLink();
+        twitterWeb.createTweet(tweetTextForDestroying);
         twitterWeb.deleteTweet(1);
-        TimeUnit.SECONDS.sleep(2);
-        userTimeLinePage = new UserTimeLinePage(twitterWeb.getDriver());
-        String actualResult = userTimeLinePage.getStatusByPosition(1).getText();
-        Assert.assertNotEquals(actualResult, tweetMessageForDestroying);
+        homeTimeLinePage = new HomeTimeLinePage(twitterWeb.getDriver());
+        globalElements = new GlobalElements(twitterWeb.getDriver());
+        String actualTweetMessage = homeTimeLinePage.getStatusByPosition(1).getText();
+        String actualAlertMessage = globalElements.getAlertMessage().getText();
+
+        Assert.assertEquals(actualAlertMessage, tweetIsDeletedAlertMessage);
+        Assert.assertNotEquals(actualTweetMessage, tweetTextForDestroying);
     }
 
-    @AfterSuite
+    @Test(description = "Check that user can not tweet equal statuses")
+    public void checkDuplicated() throws InterruptedException {
+        globalElements = new GlobalElements(twitterWeb.getDriver());
+        twitterWeb.createTweet(tweetWithDuplicate);
+        twitterWeb.createTweet(tweetWithDuplicate);
+        String actualAlertMessage = globalElements.getAlertMessage().getText();
+        TimeUnit.SECONDS.sleep(2);
+
+        Assert.assertEquals(actualAlertMessage, alertDuplicateMessage);
+    }
+
+    @AfterMethod(alwaysRun = true)
     public void setDown() throws TwitterException {
-        twitterWeb.deleteAllStatusesByAPI();
         twitterWeb.setDownDriver();
     }
 
+    @AfterSuite
+    public void destroyAllStatuses() throws TwitterException {
+        twitterWeb.deleteAllStatusesByAPI();
+    }
 }

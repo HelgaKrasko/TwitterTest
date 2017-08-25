@@ -1,3 +1,5 @@
+package Api;
+
 import twitter4j.Status;
 import twitter4j.TwitterException;
 
@@ -6,7 +8,7 @@ import java.util.List;
 
 public class TwitterAPI {
 
-    public List<String> get_home_timeline_getText(twitter4j.Twitter twitter) throws TwitterException {
+    public List<String> getHomeTimelineGetText(twitter4j.Twitter twitter) throws TwitterException {
         List<Status> status = twitter.getHomeTimeline();
         List<String> resultList = new ArrayList<String>();
         for (Status s : status) {
@@ -15,7 +17,7 @@ public class TwitterAPI {
         return resultList;
     }
 
-    public List<Integer> get_home_timeline_getRetweet_count(twitter4j.Twitter twitter) throws TwitterException {
+    public List<Integer> getHomeTimelineRetweetCount(twitter4j.Twitter twitter) throws TwitterException {
         List<Status> status = twitter.getHomeTimeline();
         List<Integer> resultList = new ArrayList<Integer>();
         for (Status s : status) {
@@ -24,7 +26,7 @@ public class TwitterAPI {
         return resultList;
     }
 
-    public List<String> get_home_timeline_getCreated_at(twitter4j.Twitter twitter) throws TwitterException {
+    public List<String> getHomeTimelineCreatedAt(twitter4j.Twitter twitter) throws TwitterException {
         List<Status> status = twitter.getHomeTimeline();
         List<String> resultList = new ArrayList<String>();
         for (Status s : status) {
