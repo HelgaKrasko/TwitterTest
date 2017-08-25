@@ -1,2 +1,2 @@
-Automation tests fo Twitter public API are located in package TestApi;
-Automation Twitter Web UI tests are located in package TestWeb;
+Automation tests fo Twitter public API are located in package TwitterTest/TwitterTest/src/test/java/TestApi.
+Automation Twitter Web UI tests are located in package TwitterTest/TwitterTest/src/test/java/TestWeb/.
